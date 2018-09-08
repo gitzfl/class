@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css"> </head>
+
+<body class="bg-dark">
+  <div class="container">
+    <form class="form-horizontal bg-dark" role="form">
+      <h1 class="">新增课程</h1>
+      <div class="form-group my-1 py-1 form-row">
+        <label class="col-sm-2 col-form-label">课程编号</label>
+        <div class="col-sm-10">
+          <input disabled="" required="required" value="自动生成，不可编辑" class="form-control"> </div>
+      </div>
+      <div class="form-group form-row">
+        <label class="col-sm-2 col-form-label">课程名称</label>
+        <div class="col-sm-10">
+          <input required="required" value="请输入课程名称" class="form-control"> </div>
+      </div>
+      <div class="form-group form-row">
+        <label class="col-sm-2 col-form-label">课程学分</label>
+        <div class="col-sm-10">
+          <input type="number" required="required" class="form-control"> </div>
+      </div>
+      <div class="form-group form-row">
+        <label class="col-sm-2 col-form-label">课程学时</label>
+        <div class="col-sm-10">
+          <input type="number" required="required" class="form-control"> </div>
+      </div>
+      <div class="form-group form-row">
+        <label class="col-sm-2 col-form-label">课程简介</label>
+        <div class="col-sm-10">
+          <textarea class="form-control"></textarea>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <label class="col-sm-2 col-form-label">必修课</label>
+        <input type="radio" value="option1" name="op1" checked="" class="m-1">是
+        <input type="radio" value="option2" name="op1" class="m-1">否 </div>
+      <div class="form-group form-row">
+        <label class="col-sm-2 col-form-label">公共课</label>
+        <input type="radio" value="option1" checked="" name="op2" class="m-1">是
+        <input type="radio" value="option2" name="op2" class="py-3 m-1">否 </div>
+      <div class="form-group form-row">
+        <label class="col-sm-2 col-form-label">所属院系</label>
+        <div class="col-sm-10">
+          <select name="select1" class="form-control">
+            <option>--请选择--</option>
+            <option value="option1">文学院</option>
+            <option value="option2">数软学院</option>
+            <option value="option3">物理学院</option>
+            <option value="option3">化学院</option>
+            <option value="option3">医学院</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <label contenteditable="true" class="col-sm-2 col-form-label">所属专业</label>
+        <div class="col-sm-10">
+          <select name="select1" class="form-control">
+            <option>--请选择--</option>
+            <option value="option1">软件工程</option>
+            <option value="option2">计算机科学与技术</option>
+            <option value="option3">软件外包</option>
+            <option value="option3">大数据应用</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <label class="col-sm-2 col-form-label">教材封面</label>
+        <div class="col-sm-10">
+          <input type="file" class="form-control"> </div>
+      </div>
+      <button type="submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
+    </form>
+    
+  </div>
+</body>
+
+</html>

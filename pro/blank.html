@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    /**
+    *Author 张福麟
+    *Date 2018-09-04 
+    */
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+</head>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    $("#id1").click(function () {
+      $("#content").load("denglu.html");
+    });
+    $("#id2").click(function () {
+      $("#content").load("kecheng.html");
+    });
+    $("#id3").click(function () {
+      $("#content").load("chengji.html");
+    });
+  });
+
+</script>
+
+<body class="">
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand w-50 h-25" href="#">
+        <img src="2018.png" class="d-inline-block align-top" alt="" height="75%"> </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <a class="btn navbar-btn ml-2 text-white btn-secondary" id="id1">
+          <i class="fa d-inline fa-lg fa-user-circle-o"></i> Sign in</a>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown border">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;  教学管理 </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">课程浏览</a>
+              <a class="dropdown-item" href="#" id="id2">课程添加</a> ————————————————————————
+              <a class="dropdown-item" href="#">教师浏览</a>
+              <a class="dropdown-item" href="#">教师添加</a>————————————————————————
+              <a class="dropdown-item" href="#">班级信息</a>
+              <a class="dropdown-item" href="#">添加班级</a>————————————————————————
+              <a class="dropdown-item" href="#">学生信息</a>
+              <a class="dropdown-item" href="#">添加学生</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown border">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp; 考试管理 </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">题库管理</a>
+              <a class="dropdown-item" href="#">在线考试</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown border">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp; &nbsp;成绩统计&nbsp;</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#" id="id3">成绩汇总</a>
+              <a class="dropdown-item" href="#">成绩核算</a>
+              <a class="dropdown-item" href="#">成绩分析</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="content" class="bg-dark h-100"></div>
+  <div class="text-white bg-dark align-self-end align-items-end justify-content-end">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mt-3">
+          <p class="text-center">© Copyright 2018 zfl - All rights reserved. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
